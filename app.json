@@ -9,7 +9,7 @@
   ],
   "repository": "https://github.com/LEGEND-AI/LEGEND-CHAT",   
     "env": {
-        "BOT_TOKEN": {
+       "BOT_TOKEN": {
             "description": "telegram bot token here",
             "required": true
         },    
