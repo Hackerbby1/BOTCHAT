@@ -7,6 +7,8 @@ import os
 import re
 import asyncio
 import time
+import json
+import requests
 from datetime import datetime
 from googletrans import Translator
 import emoji
