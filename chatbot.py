@@ -127,7 +127,7 @@ async def restart(client, m: Message):
     await accha.delete()
     await m.reply_photo(
         photo = Config.START_IMG,
-        caption=f"""**๏ ʜᴇʏ, ɪ ᴀᴍ [{Config.BOT_NAME}](t.me/{Config.BOpT_USERNAME})**\n**➻ ᴀɴ ᴀɪ-ʙᴀsᴇᴅ ᴄʜᴀᴛʙᴏᴛ.**\n**──────────────────**\n**➻ ᴜsᴀɢᴇ /chatbot [on/off]**\n**๏ ᴛᴏ ɢᴇᴛ ʜᴇʟᴘ ᴜsᴇ /help**""",
+        caption=f"""**๏ ʜᴇʏ, ɪ ᴀᴍ [{Config.BOT_NAME}](t.me/{Config.BOT_USERNAME})**\n**➻ ᴀɴ ᴀɪ-ʙᴀsᴇᴅ ᴄʜᴀᴛʙᴏᴛ.**\n**──────────────────**\n**➻ ᴜsᴀɢᴇ /chatbot [on/off]**\n**๏ ᴛᴏ ɢᴇᴛ ʜᴇʟᴘ ᴜsᴇ /help**""",
         reply_markup=InlineKeyboardMarkup(DEV_OP),
     )
     
@@ -250,22 +250,22 @@ async def legendai(client: Client, message: Message):
                if Yo == "sticker":
                    await message.reply_sticker(f"{hey}")
                if not Yo == "sticker":
-                   loll = "How Are You"
+                   loll = message.text
                    sweetie = loll.replace(" ", "%20")
                    url = f"https://kuki-api-lac.vercel.app/message={sweetie}"
                    request = requests.get(url)
                    results = json.loads(request.text)
                    boyresult = f"{results['reply']}"
-                   lol = "{boyresult}"
-                   text = soft_deEmojify(lol.strip())
+                   lol = f"{boyresult}"
+                   """text = soft_deEmojify(lol.strip())
                    lan = LANG
                    lan = lan.strip()
                    translated = await getTranslate(text, dest=lan)
                    after_tr_text = translated.text
                    betu = f"{lol} {after_tr_text}"
                    llol = [x for x in betu.split()]
-                   IPIC = random.choice(llol)
-                   await message.reply_text(f"{IPIC}")
+                   IPIC = random.choice(llol)"""
+                   await message.reply_text(f"{lol}")
    if message.reply_to_message:  
        legenddb = MongoClient(MONGO_URL)
        legend = legenddb["LegendDb"]["Legend"] 
