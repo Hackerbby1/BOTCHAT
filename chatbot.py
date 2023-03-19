@@ -39,8 +39,6 @@ async def is_admins(chat_id: int):
     ]
 
 
-
-
 async def getTranslate(text, **kwargs):
     translator = Translator()
     result = None
@@ -73,7 +71,7 @@ EMOJIOS = [
 
 START = f"""
 **๏ Hey, I am [{Config.BOT_NAME}]({Config.START_IMG1})**
-**➻ ᴀɴ ᴀɪ-ʙᴀsᴇᴅ ᴛᴇᴀᴍ ᴀɢᴏʀᴀ ᴄʜᴀᴛʙᴏᴛ.**
+**➻ A ᴄʜᴀᴛʙᴏᴛ.**
 **──────────────────**
 **➻ ᴜsᴀɢᴇ /chatbot [on/off]**
 **๏ ᴛᴏ ɢᴇᴛ ʜᴇʟᴘ ᴜsᴇ /help**
@@ -94,21 +92,21 @@ DEV_OP = [
         InlineKeyboardButton(text="🚀 Helps & Cmds 🚀", callback_data="HELP"),
     ],
     [
-        InlineKeyboardButton(text="❄️ Source Code ❄️", url=f"https://github.com/LEGEND-AI/LEGEND-CHAT"),
-        InlineKeyboardButton(text="☁️ Updates ☁️", url=f"https://t.me/LegendBot_AI"),
+        InlineKeyboardButton(text="❄️ Source Code ❄️", url=f"https://github.com/LEGEND-AI/BOTCHAT"),
+        InlineKeyboardButton(text="☁️ Updates ☁️", url=f"https://t.me/LegendBot_Update"),
     ],
 ]
 
 PNG_BTN = [
     [
          InlineKeyboardButton(
-             text="🧸 Add me Baby 🧸",
+             text="🧸Add me Baby ",
              url=f"https://t.me/{Config.BOT_USERNAME}?startgroup=true",
          ),
      ],
      [
          InlineKeyboardButton(text="✨ Support ✨", 
-                              url=f"https://t.me/LegendBot_OP",
+                              url=f"https://t.me/LegendBot_Group",
          ),
      ],
 ]
@@ -125,19 +123,14 @@ async def restart(client, m: Message):
     await accha.edit("__ᴅιиg ᴅσиg ꨄ︎ sтαятιиg..__")
     await asyncio.sleep(0.2)
     await accha.delete()
-    umm = await m.reply_sticker(
-              sticker = Config.STKR,
-    )
-    await asyncio.sleep(2)
-    await umm.delete()
     await m.reply_photo(
         photo = Config.START_IMG1,
-        caption=f"""**๏ ʜᴇʏ, ɪ ᴀᴍ [{Config.BOT_NAME}](t.me/{Config.BOT_USERNAME})**\n**➻ ᴀɴ ᴀɪ-ʙᴀsᴇᴅ ᴄʜᴀᴛʙᴏᴛ.**\n**──────────────────**\n**➻ ᴜsᴀɢᴇ /chatbot [on/off]**\n**๏ ᴛᴏ ɢᴇᴛ ʜᴇʟᴘ ᴜsᴇ /help**""",
+        caption=f"""**๏ ʜᴇʏ, ɪ ᴀᴍ [{Config.BOT_NAME}](t.me/{Config.BOpT_USERNAME})**\n**➻ ᴀɴ ᴀɪ-ʙᴀsᴇᴅ ᴄʜᴀᴛʙᴏᴛ.**\n**──────────────────**\n**➻ ᴜsᴀɢᴇ /chatbot [on/off]**\n**๏ ᴛᴏ ɢᴇᴛ ʜᴇʟᴘ ᴜsᴇ /help**""",
         reply_markup=InlineKeyboardMarkup(DEV_OP),
     )
     
     
-HELP_READ = "**ᴜsᴀɢᴇ ☟︎︎︎**\n**➻ ᴜsᴇ** `/chatbot on` **ᴛᴏ ᴇɴᴀʙʟᴇ ᴄʜᴀᴛʙᴏᴛ.**\n**➻ ᴜsᴇ** `/chatbot off` **ᴛᴏ ᴅɪsᴀʙʟᴇ ᴛʜᴇ ᴄʜᴀᴛʙᴏᴛ.**\n**๏ ɴᴏᴛᴇ ➻ ʙᴏᴛʜ ᴛʜᴇ ᴀʙᴏᴠᴇ ᴄᴏᴍᴍᴀɴᴅs ғᴏʀ ᴄʜᴀᴛ-ʙᴏᴛ ᴏɴ/ᴏғғ ᴡᴏʀᴋ ɪɴ ɢʀᴏᴜᴘ ᴏɴʟʏ!!**\n\n**➻ ᴜsᴇ** `/ping` **ᴛᴏ ᴄʜᴇᴄᴋ ᴛʜᴇ ᴘɪɴɢ ᴏғ ᴛʜᴇ ʙᴏᴛ.**\n**© @LegendBoy_OP**"
+HELP_READ = "**ᴜsᴀɢᴇ ☟︎︎︎**\n**➻ ᴜsᴇ** `/chatbot on` **ᴛᴏ ᴇɴᴀʙʟᴇ ᴄʜᴀᴛʙᴏᴛ.**\n**➻ ᴜsᴇ** `/chatbot off` **ᴛᴏ ᴅɪsᴀʙʟᴇ ᴛʜᴇ ᴄʜᴀᴛʙᴏᴛ.**\n**๏ ɴᴏᴛᴇ ➻ ʙᴏᴛʜ ᴛʜᴇ ᴀʙᴏᴠᴇ ᴄᴏᴍᴍᴀɴᴅs ғᴏʀ ᴄʜᴀᴛ-ʙᴏᴛ ᴏɴ/ᴏғғ ᴡᴏʀᴋ ɪɴ ɢʀᴏᴜᴘ ᴏɴʟʏ!!**\n\n**➻ ᴜsᴇ** `/ping` **ᴛᴏ ᴄʜᴇᴄᴋ ᴛʜᴇ ᴘɪɴɢ ᴏғ ᴛʜᴇ ʙᴏᴛ.**\n**© @LegendBot_Owner**"
 HELP_BACK = [
      [
            InlineKeyboardButton(text="✨ Back ✨", callback_data="HELP_BACK"),
@@ -177,16 +170,14 @@ async def ping(client, message: Message):
         ms = (end-start).microseconds / 1000
         await message.reply_photo(
                              photo=Config.START_IMG1,
-                             caption=f"нey вαву!!\n**[{Config.BOT_NAME}](t.me/{Config.BOT_USERNAME})** ιѕ alιve 🥀 αnd worĸιng ғιne wιтн a pιng oғ\n➥ `{ms}` ms\n\n**мαdє ωιтн ❣️ ву [LegendBoy](https://t.me/LegendBoy_OP)**",
+                             caption=f"нey вαву!!\n**[{Config.BOT_NAME}](t.me/{Config.BOT_USERNAME})** ιѕ alιve 🥀 αnd worĸιng ғιne wιтн a pιng oғ\n➥ `{ms}` ms\n\n**мαdє ωιтн ❣️ ву [LegendBoy](https://t.me/LegendBot_Ownep)**",
                              reply_markup=InlineKeyboardMarkup(PNG_BTN),
        )
 
 @bot.on_message(
     filters.command(["chatbot off", f"chatbot@{BOT_USERNAME} off"], prefixes=["/", ".", "?", "-"])
     & ~filters.private)
-async def chatbotofd(client, message):
-    legenddb = MongoClient(MONGO_URL)    
-    legend = legenddb["LegendDb"]["Legend"]     
+async def chatbotofd(client, message):   
     if message.from_user:
         user = message.from_user.id
         chat_id = message.chat.id
@@ -196,13 +187,7 @@ async def chatbotofd(client, message):
            return await message.reply_text(
                 "Sorry Sir, You are not admin"
             )
-    is_legend = legend.find_one({"chat_id": message.chat.id})
-    if not is_legend:
-        legend.insert_one({"chat_id": message.chat.id})
         await message.reply_text(f"Chatbot Disabled!")
-    if is_legend:
-        await message.reply_text(f"ChatBot Already Disabled")
-    
 
 @bot.on_message(
     filters.command(["chatbot on", f"chatbot@{BOT_USERNAME} on"] ,prefixes=["/", ".", "?", "-"])
@@ -243,10 +228,6 @@ async def chatbot(client, message):
     & ~filters.bot,
 )
 async def legendai(client: Client, message: Message):
-
-   chatdb = MongoClient(MONGO_URL)
-   chatai = chatdb["Word"]["WordDb"]   
-
    if not message.reply_to_message:
        legenddb = MongoClient(MONGO_URL)
        legend = legenddb["LegendDb"]["Legend"] 
@@ -265,7 +246,14 @@ async def legendai(client: Client, message: Message):
                if Yo == "sticker":
                    await message.reply_sticker(f"{hey}")
                if not Yo == "sticker":
-                   text = soft_deEmojify(hey.strip())
+                   loll = "How Are You"
+        sweetie = loll.replace(" ", "%20")
+                   url = f"https://kuki-api-lac.vercel.app/message={sweetie}"
+                   request = requests.get(url)
+                   results = json.loads(request.text)
+                   boyresult = f"{results['reply']}"
+                   lol = "{boyresult}"
+                   text = soft_deEmojify(lol.strip())
                    lan = LANG
                    lan = lan.strip()
                    translated = await getTranslate(text, dest=lan)
