@@ -247,7 +247,7 @@ async def legendai(client: Client, message: Message):
                    await message.reply_sticker(f"{hey}")
                if not Yo == "sticker":
                    loll = "How Are You"
-        sweetie = loll.replace(" ", "%20")
+                   sweetie = loll.replace(" ", "%20")
                    url = f"https://kuki-api-lac.vercel.app/message={sweetie}"
                    request = requests.get(url)
                    results = json.loads(request.text)
