@@ -124,7 +124,7 @@ async def restart(client, m: Message):
     await asyncio.sleep(0.2)
     await accha.delete()
     await m.reply_photo(
-        photo = Config.START_IMG1,
+        photo = Config.START_IMG,
         caption=f"""**๏ ʜᴇʏ, ɪ ᴀᴍ [{Config.BOT_NAME}](t.me/{Config.BOpT_USERNAME})**\n**➻ ᴀɴ ᴀɪ-ʙᴀsᴇᴅ ᴄʜᴀᴛʙᴏᴛ.**\n**──────────────────**\n**➻ ᴜsᴀɢᴇ /chatbot [on/off]**\n**๏ ᴛᴏ ɢᴇᴛ ʜᴇʟᴘ ᴜsᴇ /help**""",
         reply_markup=InlineKeyboardMarkup(DEV_OP),
     )
