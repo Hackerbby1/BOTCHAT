@@ -228,6 +228,8 @@ async def chatbot(client, message):
     & ~filters.bot,
 )
 async def legendai(client: Client, message: Message):
+   chatdb = MongoClient(MONGO_URL)
+   chatai = chatdb["Word"]["WordDb"]   
    if not message.reply_to_message:
        legenddb = MongoClient(MONGO_URL)
        legend = legenddb["LegendDb"]["Legend"] 
