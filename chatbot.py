@@ -72,7 +72,7 @@ EMOJIOS = [
       
 
 START = f"""
-**๏ Hey, I am [{Config.BOT_NAME}]({Config.START_IMG1})**
+**๏ Hey, I am [{Config.BOT_NAME}]({Config.START_IMG})**
 **➻ A ᴄʜᴀᴛʙᴏᴛ.**
 **──────────────────**
 **➻ ᴜsᴀɢᴇ /chatbot [on/off]**
