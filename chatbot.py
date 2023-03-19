@@ -304,7 +304,7 @@ async def legendai(client: Client, message: Message):
                if not is_chat:
                    chatai.insert_one({"word": message.reply_to_message.text, "text": message.text, "check": "none"})    
                
-
+"""
 @bot.on_message(
  (
         filters.sticker
@@ -504,6 +504,7 @@ async def vickprivatesticker(client: Client, message: Message):
               await message.reply_text(f"{IPIC}")
            if not Yo == "text":
                await message.reply_sticker(f"{hey}")
+"""
 
 print(f"{BOT_NAME} ɪs ᴀʟɪᴠᴇ!")
 print("----------------")
