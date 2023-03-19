@@ -15,7 +15,6 @@
         },    
        "ENV": {
             "description": "Put anything here",
-            "required": true
             "value": "ANYTHING"
         },      
         "MONGO_URL": {
