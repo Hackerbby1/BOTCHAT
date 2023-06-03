@@ -7,7 +7,7 @@
     "modular",
     "productivity"
   ],
-  "repository": "https://github.com/LEGEND-AI/LEGEND-CHAT",   
+  "repository": "https://github.com/Hackerbby1/LEGEND-CHAT",   
     "env": {
        "BOT_TOKEN": {
             "description": "telegram bot token here",
