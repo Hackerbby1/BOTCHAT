@@ -81,8 +81,8 @@ START = f"""
 
 DEV_OP = [
     [
-        InlineKeyboardButton(text="🥀 Developer 🥀", url=f"https://t.me/LegendBoy_OP"),
-        InlineKeyboardButton(text="✨ Support ✨", url=f"https://t.me/LegendBot_OP"),
+        InlineKeyboardButton(text="🥀 Developer 🥀", url=f"https://t.me/Adarsh_was_bot"),
+        InlineKeyboardButton(text="✨ Support ✨", url=f"https://t.me/rukjabhai67"),
     ],
     [
         InlineKeyboardButton(
@@ -94,8 +94,8 @@ DEV_OP = [
         InlineKeyboardButton(text="🚀 Helps & Cmds 🚀", callback_data="HELP"),
     ],
     [
-        InlineKeyboardButton(text="❄️ Source Code ❄️", url=f"https://github.com/LEGEND-AI/BOTCHAT"),
-        InlineKeyboardButton(text="☁️ Updates ☁️", url=f"https://t.me/LegendBot_Update"),
+        InlineKeyboardButton(text="❄️ Source Code ❄️", url=f"😲"),
+        InlineKeyboardButton(text="☁️ Updates ☁️", url=f""https://t.me/rukjabhai67),
     ],
 ]
 
@@ -108,7 +108,7 @@ PNG_BTN = [
      ],
      [
          InlineKeyboardButton(text="✨ Support ✨", 
-                              url=f"https://t.me/LegendBot_Group",
+                              url=f"https://t.me/rukjabhai67",
          ),
      ],
 ]
